@@ -24,7 +24,7 @@
 
 - AI
     
-    딥러닝/데이터분석 : 데이터 수집
+    딥러닝/데이터분석 : 데이터 수집 https://docs.google.com/document/d/1Mgke7QSE4OWnuTru9ldE5ECagasxCmaACewcsf2aoLE/edit?usp=sharing
     
     딥러닝: api 정해서 테스트해보기
     

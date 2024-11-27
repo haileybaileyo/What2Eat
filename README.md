@@ -46,3 +46,53 @@
     2. 날짜계산 (디데이, 몇단계 며칠)
     3. 체중입력+저장+수정
     4. 질문텍스트 입력 넘겨주기
+ 
+
+  ## 2주차
+
+  ### 해야할 일
+  - 딥러닝-데이터분석
+    
+    ![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/0107d0ca-3946-4841-999d-ce0cc4dde0b1/b39dd328-460f-459f-8573-f0a94e1ba316/image.png)
+    
+    응답형성이 안되는 문제 해결
+    
+    간단한 챗봇형식 구현 → backend/frotend에 전달하고 소통
+    
+    # 데이터 준비 부분
+    
+    diet_info = """
+    다이어트 관련 기본 정보:
+    
+    1. 식사 원칙:
+    - 단백질 위주의 식단 구성
+    - 탄수화물 조절
+    - 충분한 수분 섭취
+    1. 권장 식품:
+    - 닭가슴살, 생선, 계란
+    - 채소류
+    - 견과류 (소량)
+    1. 식사 시간과 방법:
+    - 하루 3끼 규칙적인 식사
+    - 과식 피하기
+    - 천천히 씹어서 먹기
+    1. 주의사항:
+    - 야식 피하기
+    - 폭식 주의
+    - 과도한 제한 금지
+    """
+    
+    # data 폴더에 저장
+    
+    with open("data/diet_info.txt", "w", encoding="utf-8") as f:
+    f.write(diet_info)
+    
+- 프론트엔드
+    1. 회의 내용 바탕으로 피그마 수정 → 디자인 완성
+    2. 개발 시작 - React 레이아웃 코드 작성 
+- 백엔드
+    - [박용우 봇 백엔드 개발](https://www.notion.so/146410bc163480a28a5fc72b0e67a5c4?pvs=21)
+    - API 명세서 및 설계 확정
+    - 아래 사진에서 3,4번 필수, 5번은 할 수 있는 만큼
+    
+    ![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/0107d0ca-3946-4841-999d-ce0cc4dde0b1/6c63102f-229c-4e6c-9e63-64f4c2cdbc9b/image.png)

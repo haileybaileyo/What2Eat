@@ -96,3 +96,92 @@
     - 아래 사진에서 3,4번 필수, 5번은 할 수 있는 만큼
     
     ![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/0107d0ca-3946-4841-999d-ce0cc4dde0b1/6c63102f-229c-4e6c-9e63-64f4c2cdbc9b/image.png)
+
+
+
+
+
+  네, 단계별로 자세히 설명해드리겠습니다.
+
+1. 딥러닝 팀이 가장 먼저 할 일:
+   - 구글 코랩에서 OpenAI API 테스트하기
+   ```python
+   # 코랩에서 openai 설치
+   !pip install openai
+   
+   # API 테스트 코드
+   import openai
+   
+   # API 키 설정
+   openai.api_key = 'your-api-key'  # OpenAI에서 발급받은 키
+   
+   # 테스트 함수
+   def test_gpt_api(user_input):
+       response = openai.ChatCompletion.create(
+           model="gpt-3.5-turbo",
+           messages=[
+               {"role": "system", "content": "당신은 다이어트 전문가입니다."},
+               {"role": "user", "content": user_input}
+           ]
+       )
+       return response.choices[0].message.content
+
+   # 테스트
+   result = test_gpt_api("다이어트할 때 어떤 음식을 먹어야 하나요?")
+   print(result)
+   ```
+
+2. 백엔드 팀이 할 일:
+   - Python과 Flask 설치
+   ```bash
+   pip install python flask flask-cors openai
+   ```
+   - 제가 위에서 제공한 백엔드 코드를 `app.py` 파일로 저장
+   - 터미널/명령 프롬프트에서 실행:
+   ```bash
+   python app.py
+   ```
+   - 서버가 `http://localhost:5000`에서 실행됨
+
+3. 프론트엔드 팀이 할 일:
+   - Node.js 설치 (https://nodejs.org)
+   - React 프로젝트 생성:
+   ```bash
+   npx create-react-app chatbot-frontend
+   cd chatbot-frontend
+   ```
+   - 필요한 패키지 설치:
+   ```bash
+   npm install tailwindcss
+   ```
+   - 제가 위에서 제공한 React 코드를 `src/App.js`에 붙여넣기
+   - 프론트엔드 서버 실행:
+   ```bash
+   npm start
+   ```
+   - 브라우저에서 `http://localhost:3000` 열기
+
+팀별 작업 환경 설정:
+
+1. 딥러닝 팀:
+   - 구글 코랩 사용 (브라우저만 있으면 됨)
+   - OpenAI API 키 발급 필요
+
+2. 백엔드 팀:
+   - Python 설치 (https://www.python.org)
+   - 코드 에디터 설치 (VS Code 추천)
+   - OpenAI API 키 공유 받기
+
+3. 프론트엔드 팀:
+   - Node.js 설치
+   - 코드 에디터 설치 (VS Code 추천)
+   - Chrome 개발자 도구 사용법 학습
+
+공통 필요 사항:
+1. Github 계정 생성
+2. Git 설치
+3. 팀 커뮤니케이션 툴 (예: Slack, Discord)
+
+처음에는 각 팀이 로컬에서 개발하고 테스트하는 것을 추천합니다. 코드가 어느 정도 완성되면 Github에 올리고 다른 팀과 통합하면 됩니다.
+
+질문이나 어려운 부분이 있다면 말씀해주세요! 각 단계별로 더 자세한 설명이 필요하시다면 알려주세요.

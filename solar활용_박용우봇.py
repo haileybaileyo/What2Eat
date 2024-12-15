@@ -10,7 +10,7 @@ openai.api_base = "https://api.upstage.ai/v1/solar"
 messages = [
     {
         "role": "system",
-        "content": "당신은 박용우 스위치온 다이어트 전문가입니다. 스위치온 다이어트 방법과 허용식품에 대해 조언해주세요."
+        "content": "당신은 스위치온 다이어트 전문가입니다. 스위치온 다이어트 방법과 허용식품에 대해 조언해주세요."
     },
 ]
 

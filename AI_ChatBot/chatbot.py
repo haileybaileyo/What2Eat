@@ -6,8 +6,8 @@ from typing import List, Dict, Optional
 import json
 
 # API 설정
-openai.api_key = "up_JB2rvyvOIYlmdY94cOh8z9h9JzwfP"
-openai.api_base = "https://api.upstage.ai/v1/solar"
+openai.api_key = "NULL"
+openai.api_base = "NULL"
 
 class DietPhase:
     def __init__(self, phase_num, days, title, goal, guidelines, allowed_foods, restrictions, fasting_rule=None):

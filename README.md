@@ -4,9 +4,6 @@
 
 > 다이어트 시작 체중·체지방·근육량을 기반으로 현재 다이어트 단계를 자동 계산하고, 해당 단계에 맞는 허용식품 질문에 답변해주는 챗봇 기반 서비스입니다.
 
-<!-- 배포 링크 / 데모 영상 / 대표 스크린샷을 이 자리에 추가하세요 -->
-<!-- 🔗 Demo: https://... -->
-<!-- 📹 Demo Video: https://... -->
 
 ---
 
@@ -62,8 +59,6 @@
 | AI | GPT API 연동, 챗봇 프롬프트 설계 |
 | Data Analysis | 허용식품 데이터 수집·정제, 다이어트 허용 기준 정립 |
 
-<!-- 팀원 이름과 GitHub 링크를 이 자리에 추가하세요 -->
-
 ---
 
 ## 🚀 실행 방법
@@ -82,11 +77,6 @@ cd chatbot-frontend
 npm install tailwindcss
 npm start
 # http://localhost:3000
-```
-
-### 환경 변수
-```
-OPENAI_API_KEY=your-api-key
 ```
 
 ---
